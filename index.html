@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Institute of Chicago Project</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="main.js" defer></script>
+    <h1>Mythology Art</h1>
+</head>
+<body>
+    <!--Start of Container For Movie Posters-->
+    <div class="container">
+        <div class="gallery"> <!--TODO Add onclick event listener for figures-->
+            <div class="gallery__item popup" onclick="myFunction()" id="fig1">
+                <img class="gallery__img" src="images/stone.jpeg" alt=''>
+                <span class="popuptext stone-data" id="myPopup">testing kljdhguh asljkdfhg;ljh</span>
+            </div>
+            <figure class="gallery__item gallery__item--2" id="fig2" onclick="event.stopPropagation(); getSong(this.id, event)">
+                <img class="gallery__img" src="images/knight.jpeg" alt='Might Wings - From "Top Gun" Original Soundtrack'>
+            </figure>
+
+            <figure class="gallery__item gallery__item--3" id="fig3" onclick="event.stopPropagation(); getSong(this.id, event)">
+                <img class="gallery__img" src="images/hercules.jpeg" alt='Take My Breath Away - From "Top Gun" Original Soundtrack'>
+            </figure>
+
+            <figure class="gallery__item gallery__item--4" id="fig4" onclick="event.stopPropagation(); getSong(this.id, event)">
+                <img class="gallery__img" src="images/headdresses.jpeg" alt='Playing with the Boys - From "Top Gun" Original Soundtrack'>
+            </figure>
+        </div>
+    </div> 
+</body>
+</html>
