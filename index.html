@@ -10,25 +10,40 @@
     <h1>Mythology Art</h1>
 </head>
 <body>
-    <!--Start of Container For Movie Posters-->
     <div class="container">
-        <div class="gallery"> <!--TODO Add onclick event listener for figures-->
-            <div class="gallery__item popup" onclick="myFunction()" id="fig1">
-                <img class="gallery__img" src="images/stone.jpeg" alt=''>
-                <span class="popuptext stone-data" id="myPopup">testing kljdhguh asljkdfhg;ljh</span>
+        <div class="gallery">
+            <div class="gallery__item popup" onclick="myFunction1()">
+                <img class="gallery__img" src="images/stone.jpeg" alt='Art Stone'>
+                <span class="popuptext1" id="myPopup1">Art ID: <span id="id1"></span><br />
+                Year: <span id="date1"></span><br />Title: <span id="title1"></span><br />Empire: <span id="empire1"></span><br />
+                </span>
             </div>
-            <figure class="gallery__item gallery__item--2" id="fig2" onclick="event.stopPropagation(); getSong(this.id, event)">
-                <img class="gallery__img" src="images/knight.jpeg" alt='Might Wings - From "Top Gun" Original Soundtrack'>
-            </figure>
-
-            <figure class="gallery__item gallery__item--3" id="fig3" onclick="event.stopPropagation(); getSong(this.id, event)">
-                <img class="gallery__img" src="images/hercules.jpeg" alt='Take My Breath Away - From "Top Gun" Original Soundtrack'>
-            </figure>
-
-            <figure class="gallery__item gallery__item--4" id="fig4" onclick="event.stopPropagation(); getSong(this.id, event)">
-                <img class="gallery__img" src="images/headdresses.jpeg" alt='Playing with the Boys - From "Top Gun" Original Soundtrack'>
-            </figure>
+            <div class="gallery__item popup" onclick="myFunction2()">
+                <img class="gallery__img" src="images/knight.jpeg" alt='Knight vs Dragon'>
+                <span class="popuptext2" id="myPopup2">Art ID: <span id="id2"></span><br />
+                Year: <span id="date2"></span><br />Title: <span id="title2"></span><br />Artist: <span id="empire2"></span><br />
+                </span>
+            </div>
+            <div class="gallery__item popup" onclick="myFunction3()">
+                <img class="gallery__img" src="images/hercules.jpeg" alt='Fighting Hercules'>
+                <span class="popuptext3" id="myPopup3">Art ID: <span id="id3"></span><br />
+                Year: <span id="date3"></span><br />Title: <span id="title3"></span><br />Artist: <span id="empire3"></span><br />
+                </span>
+            </div>
+            <div class="gallery__item popup" onclick="myFunction4()">
+                <img class="gallery__img" src="images/adam.jpeg" alt='Headdresses'>
+                <span class="popuptext4" id="myPopup4">Art ID: <span id="id4"></span><br />
+                Year: <span id="date4"></span><br />Title: <span id="title4"></span><br />Artist: <span id="empire4"></span><br />
+                </span>
+            </div>
         </div>
     </div> 
 </body>
+<footer>
+    <hr>
+    <div>
+        &copy Art Insititute of Chicago
+    </div>
+    </hr>
+</footer>
 </html>
